@@ -30,6 +30,10 @@ img {
     max-inline-size: 100%;
 }
 
+:root {
+    --main-color: #34547a;
+}
+
 .container {
     width: 1120px;
     margin: 0 auto;
@@ -59,7 +63,7 @@ img {
     margin-top: 62px;
     width: 225px;
     padding: 17px 5px;
-    background: #34547a;
+    background-color: var(--main-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 164%;
@@ -90,7 +94,7 @@ img {
         font-size: 16px;
         line-height: 164%;
         letter-spacing: 0.1em;
-        color: #34547a;
+        color: var(--main-color);
     }
 
 }
@@ -109,7 +113,7 @@ img {
 
 .projects {
     padding: 100px 0;
-    background: #34547a;
+    background: var(--main-color);
 }
 
 .projects__wrapper {
@@ -149,4 +153,23 @@ img {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.footer {
+    padding: 50px 0;
+    background-color: var(--main-color);
+
+    h2 {
+        font-weight: 500;
+        font-size: 21px;
+        color: #fff;
+    }
+
+    p {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 164%;
+        color: #fff;
+    }
 }
